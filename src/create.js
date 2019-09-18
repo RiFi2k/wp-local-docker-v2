@@ -30,6 +30,9 @@ const createEnv = async function() {
             'memcached': {
                 'image': 'memcached:latest'
             },
+            'redis': {
+                'image': 'redis:latest'
+            },
             'nginx': {
                 'image': 'nginx:latest',
                 'expose': [
@@ -267,6 +270,7 @@ const createEnv = async function() {
         ],
         'depends_on': [
             'memcached',
+            'redis',
         ],
         'networks': [
             'default',

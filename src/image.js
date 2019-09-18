@@ -18,6 +18,7 @@ const images = [
     '10up/phpfpm:5.5',
     '10up/wpsnapshots:dev',
     'memcached:latest',
+    'redis:latest',
     'nginx:latest',
     'docker.elastic.co/elasticsearch/elasticsearch:5.6.5',
     'hitwe/phpmemcachedadmin'
